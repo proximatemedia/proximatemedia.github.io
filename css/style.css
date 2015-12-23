@@ -59,7 +59,7 @@ body{
   color: #1dbed0;
   font-size: 40px;
   text-align: center;
-  line-height: 62px;
+  line-height: 60px;
   font-family: raleway, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -84,6 +84,22 @@ body{
   font-weight: 500;
   position: relative;
   bottom: 4px;
+}
+.main-title-sub-heading{
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
+  line-height: 15px;
+  font-family: raleway, sans-serif;
+  font-weight: 500;
+  position: relative;
+  bottom: 4px;
+  word-wrap: break-word;
+  margin-top: 20px;
+}
+.small-sub-heading{
+  font-size: 15px;
 }
 .flipperButton{
   width: 171px;
@@ -1876,6 +1892,9 @@ textarea.form-control {
     margin-top: 102px;
     padding-left: 15px;
   }
+   .extra-top-margin-mobile{
+        margin-top: 100px;
+  }
 
    /*sub services section*/
 
@@ -2119,6 +2138,10 @@ textarea.form-control {
     padding-left: 15px;
   }
 
+   .extra-top-margin-mobile{
+        margin-top: 300px;
+  }
+
   /*sub services section*/
 
   .subServicesSection {
@@ -2154,13 +2177,6 @@ textarea.form-control {
     background-position: -15px 0px;
   }
 
-.ddpSection
-{
-  margin-top: 300px;
-  height: 160px;
-  width: 100%;
-  background-color: #0777a5;
-}
   /*funfacts*/
   .funfacts {
     height: 1200px;
@@ -2289,14 +2305,14 @@ textarea.form-control {
   }
 }
 
-@media screen and (min-width:480px) and (max-width: 768px) {
+@media screen and (min-width:480px) and (max-width: 767px) {
 
 /*navigation bar*/
   
   .navbar-brand
   {
-    padding-left: 30px;
-    padding-top: 24px;
+    padding-left: 0px;
+    padding-top: 15px;
   }
   .navbar-toggle {
     padding: 11px 10px;
@@ -2311,6 +2327,7 @@ textarea.form-control {
     margin-top: 0px;
     border: none;
   }
+
 
   /*about us section*/
   .about
@@ -2422,6 +2439,9 @@ textarea.form-control {
       height: auto;
       width: 100%;
       background-color: #fff;
+  }
+  .extra-top-margin-mobile{
+        margin-top: 200px;
   }
   
   /*funfacts*/
@@ -2576,8 +2596,8 @@ textarea.form-control {
 
   .navbar-brand
   {
-    padding-left: 30px;
-    padding-top: 24px;
+    padding-left: 0px;
+    padding-top: 15px;
   }
   .navbar-toggle {
     padding: 11px 10px;
@@ -2591,6 +2611,13 @@ textarea.form-control {
   {
     margin-top: 0px;
     border: none;
+  }
+  .flipper h1{
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .flipper h2{
+    font-size: 12px;
   }
 
   /*about us section*/
@@ -2672,13 +2699,14 @@ textarea.form-control {
     text-align: center;
     font-family: ubuntu, sans-serif;
     font-weight: 700;
-    padding-top: 66px;
+    padding-top: 60px;
   }
   .ddpSection {
     height: 160px;
     width: 100%;
-    margin-top: 4px;
-    background-color: #eab000;
+  }
+  .extra-top-margin-mobile{
+        margin-top: 480px;
   }
 
   /*testimonials section*/
