@@ -90,7 +90,7 @@ body{
   color: #FFFFFF;
   font-size: 20px;
   text-align: center;
-  line-height: 15px;
+  line-height: 100%;
   font-family: raleway, sans-serif;
   font-weight: 500;
   position: relative;
@@ -170,7 +170,7 @@ body{
 }
 .navbar-toggle {
   border-radius: 0px;
- } 
+ }
 .navbar-default .navbar-toggle {
     border-color: #1dbed0;
 }
@@ -182,7 +182,7 @@ body{
 
 .about
 {
-  height: 778px;
+  height: 1050px;
   width: 100%;
 }
 .defaultHeaderAbout
@@ -280,7 +280,7 @@ body{
 }
 .aboutItem
 {
-  height: 147px;
+  height: 250px;
 }
 .aboutItem:nth-child(4)
 {
@@ -305,13 +305,12 @@ body{
 }
 .itemHeader
 {
-  height: 200px;
+  height: 147;
   width: 240px;
   padding: 0;
   margin-left: 36px;
-  height: 147px;
 }
-.itemHeader p 
+.itemHeader p
 {
   float: left;
   padding-left: 19px;
@@ -320,7 +319,7 @@ body{
 }
 
 /*advertising section*/
-  
+
 .advertisement
 {
   height: 479px;
@@ -519,7 +518,7 @@ body{
   width: 100%;
   background-color: #fff;
  }
- .tabSection  
+ .tabSection
  {
   width: 1100px;
   padding-top: 15px;
@@ -631,7 +630,7 @@ body{
   float: left;
   position: relative;
 }
-.serviceSlider h6 
+.serviceSlider h6
 {
   color: #404040;
   font-size: 13px;
@@ -640,22 +639,22 @@ body{
   font-family: raleway, sans-serif;
   font-weight: 600;
 }
-.sliderTExtblue
+.sliderTextblue
 {
   color: #0777a5;
-  font-size: 32px;
+  font-size: 30px;
   text-align: justify;
   line-height: 52px;
-  font-family: open-sans, sans-serif;
+  font-family: raleway, open-sans, sans-serif;
   font-weight: 300;
 }
-.sliderTExt
+.sliderText
 {
   color: #404040;
-  font-size: 20px;
+  font-size: 18px;
   text-align: justify;
   line-height: 32px;
-  font-family: open-sans, sans-serif;
+  font-family: raleway, open-sans, sans-serif;
   font-weight: 300;
 }
 /*progress bars*/
@@ -965,7 +964,7 @@ body{
   margin: auto;
   width: 181px;
 }
-.itemTeam ul li 
+.itemTeam ul li
 {
   float: left;
   height: 30px;
@@ -1043,7 +1042,7 @@ body{
 }
 .progress-bar {
   background-color: #eab000;
-} 
+}
 .itemRightAwesomeSkillSection
 {
   margin-top: 76px;
@@ -1251,7 +1250,7 @@ body{
   padding: 6px 21px;
   margin: 0px 6px;
 }
-.portfolio ul li a 
+.portfolio ul li a
 {
   color: #404040;
   font-size: 13px;
@@ -1356,7 +1355,7 @@ body{
 .portfolioItem9
 {
   height: 300px;
-  width: 584px; 
+  width: 584px;
   background-image: url('../assets/portfolio/9.jpg');
   background-size: cover;
   background-position: center center;
@@ -1560,7 +1559,7 @@ body{
   -o-transition:all 0.5s ease;
 }
 
-.itemPricingCenter ul 
+.itemPricingCenter ul
 {
   list-style: none;
   display: table;
@@ -1591,7 +1590,7 @@ body{
 {
   position:relative;bottom:20px
 }
-.btn-default  
+.btn-default
 {
   background-color: #181818;
   width: 171px;
@@ -1783,7 +1782,7 @@ textarea.form-control {
   margin: 36px auto;
   width: 181px;
 }
-.item2Footer ul li 
+.item2Footer ul li
 {
   float: left;
   height: 30px;
@@ -1859,7 +1858,7 @@ textarea.form-control {
   height: 401px;
 }
 /*===============================================
-            
+
             MEDIA QUERIES FOR DEVICES
 
 ===============================================*/
@@ -1876,7 +1875,7 @@ textarea.form-control {
   }
   .about
   {
-    height: 800px;
+    height: 1000px;
   }
    .aboutRight img
   {
@@ -1925,14 +1924,14 @@ textarea.form-control {
     width: 219px;
   }
   .defaultHeaderFunFacts
-  { 
+  {
     width: 100%;
   }
 
   /*team section*/
 
   .itemTeam
-  { 
+  {
     width: 50%;
   }
   .itemTeam:nth-child(2)
@@ -1962,7 +1961,7 @@ textarea.form-control {
   }
   .defaultHeaderContact
   {
-    width: 100%; 
+    width: 100%;
   }
   .portfolio {
     height: auto;
@@ -2043,6 +2042,10 @@ textarea.form-control {
   .about
   {
     height: 1000px;
+  }
+  .aboutItem
+  {
+    height: 315px;
   }
   .aboutItem:nth-child(4) {
       position: relative;
@@ -2142,6 +2145,16 @@ textarea.form-control {
         margin-top: 300px;
   }
 
+  /* services section */
+  .sliderTextblue
+  {
+    font-size: 28px;
+  }
+  .sliderText
+  {
+    font-size: 16px;
+  }
+
   /*sub services section*/
 
   .subServicesSection {
@@ -2214,7 +2227,7 @@ textarea.form-control {
     margin: 0 auto;
   }
    .defaultHeaderFunFacts
-  { 
+  {
     width: 100%;
   }
   /*team section*/
@@ -2223,7 +2236,7 @@ textarea.form-control {
       width: 100%;
   }
   .itemTeam
-  { 
+  {
     width: inherit;
     float: none;
     margin: 0 auto;
@@ -2254,7 +2267,7 @@ textarea.form-control {
   }
   .defaultHeaderContact
   {
-    width: 100%; 
+    width: 100%;
   }
   /*footer section*/
   .footer {
@@ -2308,7 +2321,7 @@ textarea.form-control {
 @media screen and (min-width:480px) and (max-width: 767px) {
 
 /*navigation bar*/
-  
+
   .navbar-brand
   {
     padding-left: 0px;
@@ -2336,6 +2349,10 @@ textarea.form-control {
   }
   .defaultHeaderAbout {
     width: 100%;
+  }
+  .aboutItem
+  {
+    height: 315px;
   }
   .aboutLeft {
     text-align: center;
@@ -2435,6 +2452,7 @@ textarea.form-control {
     margin-top: 102px;
     padding-left: 15px;
   }
+
   .services {
       height: auto;
       width: 100%;
@@ -2443,7 +2461,7 @@ textarea.form-control {
   .extra-top-margin-mobile{
         margin-top: 200px;
   }
-  
+
   /*funfacts*/
   .funfacts {
     height: 1200px;
@@ -2481,13 +2499,13 @@ textarea.form-control {
     margin: 0 auto;
   }
    .defaultHeaderFunFacts
-  { 
+  {
     width: 100%;
   }
   /*team section*/
 
   .itemTeam
-  { 
+  {
     width: inherit;
     float: none;
     margin: 0 auto;
@@ -2539,7 +2557,7 @@ textarea.form-control {
   }
   .defaultHeaderContact
   {
-    width: 100%; 
+    width: 100%;
   }
   /*footer section*/
   .footer {
@@ -2571,7 +2589,7 @@ textarea.form-control {
   }
    /*services section*/
   .services {
-      height: 1200px;
+      height: 1000px;
       width: 100%;
       background-color: #fff;
   }
@@ -2582,6 +2600,16 @@ textarea.form-control {
       float: left;
       position: relative;
   }
+
+  .sliderTextblue
+  {
+    font-size: 28px;
+  }
+  .sliderText
+  {
+    font-size: 16px;
+  }
+
   .tabSection {
       width: 100%;
       margin: 0 auto;
@@ -2627,6 +2655,10 @@ textarea.form-control {
   }
   .defaultHeaderAbout {
     width: 100%;
+  }
+  .aboutItem
+  {
+    height: 315px;
   }
   .aboutLeft {
     text-align: center;
@@ -2687,7 +2719,7 @@ textarea.form-control {
   .aboutRight {
     left: 0;
   }
-  
+
 
   /*design develope publish section*/
 
@@ -2778,13 +2810,13 @@ textarea.form-control {
     margin: 0 auto;
   }
    .defaultHeaderFunFacts
-  { 
+  {
     width: 100%;
   }
   /*team section*/
 
   .itemTeam
-  { 
+  {
     width: inherit;
     float: none;
     margin: 0 auto;
@@ -2836,7 +2868,7 @@ textarea.form-control {
   }
   .defaultHeaderContact
   {
-    width: 100%; 
+    width: 100%;
   }
   .portfolio {
     height: auto;
@@ -2881,7 +2913,7 @@ textarea.form-control {
   }
   /*services section*/
   .services {
-      height: 1200px;
+      height: 800px;
       width: 100%;
       background-color: #fff;
   }
@@ -2892,6 +2924,15 @@ textarea.form-control {
       float: left;
       position: relative;
   }
+  .sliderTextblue
+  {
+    font-size: 28px;
+  }
+  .sliderText
+  {
+    font-size: 16px;
+  }
+
   .tabSection {
       width: 100%;
       margin: 0 auto;
