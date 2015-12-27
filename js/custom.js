@@ -10,8 +10,8 @@
       ], {
         fade: 750,
         duration: 4000
-      }); 
-	
+      });
+
 
    // text fipper header section you can customize it link here http://morphext.fyianlai.com/
 
@@ -31,7 +31,7 @@
 
     var navigation = $('.header').offset().top + 800;
 
-    $(document).scroll(function(){	
+    $(document).scroll(function(){
     	if($(this).scrollTop() > navigation){
     		$('nav').addClass('navbar-fixed-top');
         $('nav').css({
@@ -47,7 +47,7 @@
     	}
     });
 
-    // navigation scroll/swing code you can customize it 
+    // navigation scroll/swing code you can customize it
 
     $(".scroll").on('click',function(event){
          event.preventDefault();
@@ -61,10 +61,10 @@
          //go to destination
          $('html,body').animate({scrollTop:dest}, 1000,'swing');
      });
- 
- 
 
-  
+
+
+
 
     $('.itemSubServices').on('mouseover',function(){
       $(this).children('i').css({
@@ -81,7 +81,7 @@
       })
     });
 
-  
+
 
   // animate numbers fun facts you can customize it
 
@@ -91,8 +91,8 @@
 
     if($(this).scrollTop() > targetFunFactsAnimationNumbers)
     {
-      $('#animateNumber1').animate(  // animate numbers 
-        {someValue: 970}, 
+      $('#animateNumber1').animate(  // animate numbers
+        {someValue: 970},
         {
         duration: 1000,
         easing:'swing',
@@ -100,8 +100,8 @@
             $('#animateNumber1').text(Math.round(this.someValue));
         }
       });
-      $('#animateNumber2').animate(  // animate numbers 
-          {someValue: 720}, 
+      $('#animateNumber2').animate(  // animate numbers
+          {someValue: 720},
           {
           duration: 1000,
           easing:'swing',
@@ -109,8 +109,8 @@
               $('#animateNumber2').text(Math.round(this.someValue));
           }
       });
-      $('#animateNumber3').animate(  // animate numbers 
-          {someValue: 450}, 
+      $('#animateNumber3').animate(  // animate numbers
+          {someValue: 450},
           {
           duration: 1000,
           easing:'swing',
@@ -118,8 +118,8 @@
               $('#animateNumber3').text(Math.round(this.someValue));
           }
       });
-      $('#animateNumber4').animate(  // animate numbers 
-          {someValue: 24}, 
+      $('#animateNumber4').animate(  // animate numbers
+          {someValue: 24},
           {
           duration: 1000,
           easing:'swing',
@@ -130,8 +130,8 @@
     }
   });*/
 
- 
- 
+
+
 
 
   // portfolio section navigation hover effects
@@ -144,7 +144,7 @@
   // portfolio mix it up . please check https://mixitup.kunkalabs.com/ for documentation
 
    $('#Container').mixItUp();
-   
+
    // googleMaps you can customize it from https://snazzymaps.com/
     google.maps.event.addDomListener(window, 'load', init);
     function init() {
@@ -155,7 +155,7 @@
             // The latitude and longitude to center the map
             center: new google.maps.LatLng(49.1047774, -122.7987534), // Surrey
 
-            // How you would like to style the map. 
+            // How you would like to style the map.
             // This is where you would paste any style found on Snazzy Maps.
             styles: [
     {
@@ -278,7 +278,7 @@
   ]
           };
 
-          // Get the HTML DOM element that will contain your map 
+          // Get the HTML DOM element that will contain your map
           // We are using a div with id="map" seen below in the <body>
           var mapElement = document.getElementById('map');
 
@@ -299,6 +299,55 @@
 
 
 
-// wow js plugin 
+// wow js plugin
  new WOW().init();
+
+ // contact us form
+
+ $("#contactUsForm").validate({
+		rules: {
+				//  name
+				"entry.356121448": {
+						required: true,
+						maxlength: 64
+				},
+				//  email
+				"entry.1741601769": {
+						required: true,
+						email: true
+				},
+				//  website
+				"entry.1903101013": {
+						required: false,
+						url: true,
+						maxlength: 64
+				},
+				//  message
+				"entry.1546303974": {
+						required: true,
+						maxlength: 8192
+				}
+		}
+});
+	// bind 'myForm' and provide a simple callback function
+	$("#ss-submit").click(function() {
+			$("#contact-form-success").hide();
+			if ($('#contactUsForm').validate().form()) {
+					jQuery.support.cors = true;
+					$.ajax({
+							dataType: (typeof isIeAndOlderThanV10 !== 'undefined')? 'script' : '',
+							type: "POST",
+							url: "https://docs.google.com/a/proximatemedia.com/forms/d/1tsiuDFGmckEGlvx_Ez4jAgyhB20LCU_5_JxGiyFr7B4/formResponse",
+							data: $("contactUsForm").serialize(),
+							complete: function() {
+									console.log("Form validated and sent successfully!");
+									document.getElementById("contactUsForm").reset();
+									$("#contact-form-success").show();
+							}
+					});
+			} else {
+					console.log("Form failed validation!");
+			}
+			return false;
+	});
 })();

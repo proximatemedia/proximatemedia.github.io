@@ -367,29 +367,28 @@
     </header>
     <div class="container">
       <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding0">
-          <form>
+        <form id="contactUsForm">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding0">
             <div class="form-group">
-              <input type="text" class="form-control wow fadeIn" placeholder="Your Name" data-wow-duration="1s">
+              <input type="text" class="form-control wow fadeIn" placeholder="Your Name" data-wow-duration="1s" name="entry.356121448" id="entry_356121448">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control wow fadeIn" placeholder="Your Email" data-wow-duration="1s">
+              <input type="email" class="form-control wow fadeIn" placeholder="Your Email" data-wow-duration="1s" name="entry.1741601769" id="entry_1741601769">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control wow fadeIn" placeholder="Your Website" data-wow-duration="1s">
+              <input type="text" class="form-control wow fadeIn" placeholder="Your Website" data-wow-duration="1s" name="entry.1903101013" id="entry_1903101013">
             </div>
-          </form>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding0">
-          <form>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 padding0">
             <div class="form-group">
-              <textarea class="form-control wow fadeIn" rows="10" placeholder="Enter Your Message" data-wow-duration="1s"></textarea>
+              <textarea class="form-control wow fadeIn" rows="10" placeholder="Enter Your Message" data-wow-duration="1s" name="entry.1546303974" id="entry_1546303974"></textarea>
             </div>
-          </form>
-        </div>
-        <p class="text-center">
-          <button class="send wow fadeIn" data-wow-duration="1s">SEND A MESSAGE</button>
-        </p>
+          </div>
+          <p class="text-center">
+            <button type=submit class="button send wow fadeIn" data-wow-duration="1s" name=submit value="SEND A MESSAGE" id=ss-submit />
+            <span id=contact-form-success><span>Message sent</span>
+          </p>
+        </form>
       </div>
     </div>
   </section>
@@ -430,6 +429,8 @@
   </footer>
 
   <script src="js/jquery.js"></script>
+  <script src="js/jquery.validate.min.js">
+  <script src="http://malsup.github.com/jquery.form.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/jquery.mixitup.js"></script>
   <script src="js/morphext.js"></script>
