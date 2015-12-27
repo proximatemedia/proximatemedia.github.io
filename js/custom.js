@@ -303,7 +303,7 @@
  new WOW().init();
 
  // contact us form
-
+ $("#contact-form-success").hide();
  $("#contactUsForm").validate({
 		rules: {
 				//  name
