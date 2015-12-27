@@ -338,9 +338,8 @@
 							dataType: (typeof isIeAndOlderThanV10 !== 'undefined')? 'script' : '',
 							type: "POST",
 							url: "https://docs.google.com/a/proximatemedia.com/forms/d/1tsiuDFGmckEGlvx_Ez4jAgyhB20LCU_5_JxGiyFr7B4/formResponse",
-							data: $("contactUsForm").serialize(),
+							data: $("#contactUsForm").serialize(),
 							complete: function() {
-									console.log("Form validated and sent successfully!");
 									document.getElementById("contactUsForm").reset();
 									$("#contact-form-success").show();
 							}

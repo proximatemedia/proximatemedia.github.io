@@ -1670,6 +1670,10 @@ body {
   margin-right: 10px;
 }
 
+.contact .form-submit-status {
+  font-family: raleway, sans-serif;  
+}
+
 .form-control {
   width: 571px;
   min-height: 14px;
