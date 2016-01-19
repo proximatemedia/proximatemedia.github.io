@@ -82,7 +82,6 @@
     });
 
 
-
   // animate numbers fun facts you can customize it
 
   /*var targetFunFactsAnimationNumbers = $('#targetFunFactsAnimationNumbers').offset().top + 1;

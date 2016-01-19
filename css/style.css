@@ -217,6 +217,7 @@ body {
 
 .defaultHeaderAbout h6 {
   letter-spacing: 2px;
+  line-height: 1.7em;
   color: #707070;
   font-size: 14px;
   text-align: center;
@@ -1603,7 +1604,7 @@ body {
 }
 
 .btn-default {
-  background-color: #181818;
+  background-color: #0777a5;
   width: 171px;
   border-radius: 0px;
   height: 50px;
@@ -1620,7 +1621,7 @@ body {
 
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
   color: #fff;
-  background-color: #eab000;
+  background-color: #1dbed0;
   border-color: transparent;
 }
 
@@ -1883,6 +1884,16 @@ textarea.form-control {
   height: 401px;
 }
 
+/* CAREERS SECTION */
+
+.job-description{
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.job-description-list{
+  font-size: 15px;
+}
 
 /*===============================================
 
@@ -2527,7 +2538,6 @@ textarea.form-control {
   .contact {
     height: 850px;
   }
-
 
   /*footer section*/
   .footer {
