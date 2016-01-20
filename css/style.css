@@ -106,11 +106,11 @@ body {
   width: 171px;
   text-align: center;
   border: 1px solid #fff;
-  font-size: 10px;
   height: 50px;
   background-color: transparent;
   margin-top: 16px;
   font-size: 14px;
+  font-family: raleway, sans-serif;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -1619,6 +1619,12 @@ body {
   transition: all 0.5s ease;
 }
 
+.btn-sm{
+  width: 150px;
+  height: 30px;
+  font-family: raleway, sans-serif;
+}
+
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
   color: #fff;
   background-color: #1dbed0;
@@ -1722,7 +1728,7 @@ textarea.form-control {
   margin-top: 6px;
   font-weight: 700;
   color: #6b6b6b;
-  font-family: ubuntu;
+  font-family: raleway, sans-serif;
 }
 
 .send:hover {
@@ -1886,13 +1892,18 @@ textarea.form-control {
 
 /* CAREERS SECTION */
 
+.careers{
+  font-family: raleway, sans-serif;
+}
 .job-description{
   font-size: 16px;
   line-height: 1.5em;
 }
 
 .job-description-list{
+  margin-left: 30px;
   font-size: 15px;
+  line-height: 1.7em;
 }
 
 /*===============================================
